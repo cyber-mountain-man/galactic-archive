@@ -71,7 +71,7 @@ This app is inspired by the idea of a **central galactic database** — like the
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/<your-username>/galactic-archive.git
+   git clone https://github.com/cyber-mountain-man/galactic-archive.git
    cd galactic-archive
    ```
 
