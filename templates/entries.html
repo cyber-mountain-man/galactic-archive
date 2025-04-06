@@ -1,0 +1,36 @@
+{{/* entries.html — Renders a list of filtered archive entries from []Entry */}}
+
+{{ range . }}
+  <!-- Entry card -->
+  <div class="box has-background-black-ter has-text-white mb-5">
+
+    <!-- Entry title -->
+    <h2 class="title is-4 has-text-info">
+      {{ .Name }}
+      {{ if eq .Type "creed" }}📜{{ end }}
+      {{ if eq .Type "event" }}🕰️{{ end }}
+      {{ if eq .Type "artifact" }}🧬{{ end }}
+      {{ if eq .Type "planet" }}🪐{{ end }}
+      {{ if eq .Type "faction" }}🧑‍🚀{{ end }}
+      {{ if eq .Type "motto" }}💬{{ end }}
+    </h2>
+
+    <!-- Meta info -->
+    <div class="is-size-7 has-text-grey-light mb-2">
+      <strong>Type:</strong> {{ .Type }}<br />
+      <strong>Faction:</strong> {{ .Faction }}
+    </div>
+
+    <!-- Description -->
+    <div class="content has-text-light">
+      {{ .Description }}
+    </div>
+
+  </div>
+{{ else }}
+  <!-- If no results are found -->
+  <div class="notification is-dark has-text-grey-light">
+    <strong>No entries found for this category.</strong><br />
+    The Archivist’s Codex may need updating.
+  </div>
+{{ end }}

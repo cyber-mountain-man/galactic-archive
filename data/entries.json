@@ -1,0 +1,73 @@
+[
+    {
+      "id": "creed-knowledge-over-war",
+      "name": "The Archivist's Creed",
+      "type": "creed",
+      "faction": "Order of the Eternal Record",
+      "description": "The true strength of a civilization is not measured by its weapons or its armies, but by the knowledge it preserves for future generations. — Archivist's Creed, Circa 3412 A.G."
+    },
+    {
+      "id": "motto-stars-remember",
+      "name": "The Stars Remember",
+      "type": "motto",
+      "faction": "Outer Rim Historians",
+      "description": "Even when empires fall and data is lost, the stars hold memory in their silence."
+    },
+    {
+      "id": "event-fracture-of-elysiar",
+      "name": "Fracture of Elysiar",
+      "type": "event",
+      "faction": "Elysiar Consortium",
+      "description": "A high-energy experiment gone wrong tore the planet of Elysiar into four semi-sentient floating continents, each orbiting the event core independently. This marked the start of the Psionic Age."
+    },
+    {
+      "id": "artifact-veil-codex",
+      "name": "The Veil Codex",
+      "type": "artifact",
+      "faction": "Unknown",
+      "description": "An ancient tome written in living script that alters its message with each reading. Believed to be a remnant of Pre-Void Civilizations."
+    },
+    {
+      "id": "planet-virella",
+      "name": "Virella",
+      "type": "planet",
+      "faction": "Keepers of the First Light",
+      "description": "A twilight world with no sun, kept warm by its molten core. Its surface is home to the Cradle Archives—vast underground vaults sealed in obsidian and watched by sentient flame-beetles."
+    },
+    {
+      "id": "faction-keepers",
+      "name": "The Keepers of the First Light",
+      "type": "faction",
+      "faction": "Non-Aligned Worlds",
+      "description": "A secretive guild of stellar monks preserving the philosophies of pre-Galactic civilizations. They refuse all digital transmission, recording only in crystal memory cores."
+    },
+    {
+      "id": "event-treaty-of-null",
+      "name": "Treaty of Null",
+      "type": "event",
+      "faction": "Galactic Unity Council",
+      "description": "A multi-system agreement to ban time-manipulation technologies after the Echo Collapse distorted four major timelines. The treaty is enforced by the Temporal Inquisition."
+    },
+    {
+      "id": "motto-record-or-regret",
+      "name": "Record or Regret",
+      "type": "motto",
+      "faction": "Archivist Outpost Theta-9",
+      "description": "For every piece of knowledge we fail to preserve, a generation will be condemned to rediscover it in fire."
+    },
+    {
+      "id": "artifact-oracle-core",
+      "name": "Oracle Core",
+      "type": "artifact",
+      "faction": "Temporal Inquisition",
+      "description": "A quantum artifact that predicts branching outcomes of interstellar events. It speaks only in riddles and statistical contradictions."
+    },
+    {
+      "id": "planet-solstice-prime",
+      "name": "Solstice Prime",
+      "type": "planet",
+      "faction": "Council of Twilight Worlds",
+      "description": "A rogue planet in deep drift, cloaked in a perpetual aurora. Said to be the birthplace of dream-transference technology and the final resting place of the Dreamer Kings."
+    }
+  ]
+  

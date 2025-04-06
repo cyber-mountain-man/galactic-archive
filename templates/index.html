@@ -1,0 +1,83 @@
+{{ define "title" }}Galactic Archive Home{{ end }}
+
+{{ define "content" }}
+<!-- Hero Section: Sets the tone of the application -->
+<section class="hero is-dark is-bold">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title is-2">
+        🌌 Galactic Archive
+      </h1>
+      <p class="subtitle is-5 has-text-grey-light">
+        Preserving the knowledge of the cosmos — one entry at a time.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Archive Filter Section -->
+<section class="section">
+  <div class="container">
+    <h2 class="title is-4 has-text-white">Explore Archive Categories</h2>
+    <p class="has-text-grey-light mb-3">
+      Choose a category below to begin your exploration.
+    </p>
+
+    <!-- htmx Buttons: Trigger GET requests to /entries?type=... -->
+    <!-- hx-target defines where the response will be injected -->
+    <!-- hx-swap replaces the inner HTML of the target container -->
+    <div class="buttons">
+      <button class="button is-link is-light"
+              hx-get="/entries?type=creed"
+              hx-target="#entries"
+              hx-swap="innerHTML">
+        📜 Creeds
+      </button>
+
+      <button class="button is-warning is-light"
+              hx-get="/entries?type=event"
+              hx-target="#entries"
+              hx-swap="innerHTML">
+        🕰️ Timeline Events
+      </button>
+
+      <button class="button is-info is-light"
+              hx-get="/entries?type=artifact"
+              hx-target="#entries"
+              hx-swap="innerHTML">
+        🧬 Artifacts
+      </button>
+
+      <button class="button is-danger is-light"
+              hx-get="/entries?type=planet"
+              hx-target="#entries"
+              hx-swap="innerHTML">
+        🪐 Planets
+      </button>
+
+      <button class="button is-primary is-light"
+              hx-get="/entries?type=faction"
+              hx-target="#entries"
+              hx-swap="innerHTML">
+        🧑‍🚀 Factions
+      </button>
+
+      <button class="button is-dark is-light"
+              hx-get="/entries?type=motto"
+              hx-target="#entries"
+              hx-swap="innerHTML">
+        💬 Mottos
+      </button>
+    </div>
+
+    <!-- Results Container: where entries.html gets injected via htmx -->
+    <div id="entries" class="mt-5">
+      <article class="message is-dark">
+        <div class="message-body">
+          <strong>Welcome, Archivist.</strong> Begin your search by selecting a category above. The archive is constantly evolving...
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+{{ end }}

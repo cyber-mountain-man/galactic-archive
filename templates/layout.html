@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Page title dynamically filled by child templates -->
+  <title>{{ block "title" . }}Galactic Archive{{ end }}</title>
+
+  <!-- Bulma CSS Framework for modern UI -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+
+  <!-- Interesting "Eye Favicon" -->
+  <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+
+  <!-- Google Font for a sci-fi-inspired monospace aesthetic -->
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+
+  <!-- htmx: Enables AJAX-like requests without custom JavaScript -->
+  <script src="/static/js/htmx.min.js"></script>
+
+  <!-- Global custom styles -->
+  <style>
+    body {
+      background-color: #0e0e10;
+      font-family: 'Share Tech Mono', monospace;
+    }
+    ::selection {
+      background: #6b46c1;
+      color: white;
+    }
+    a {
+      color: #a3e4ff;
+    }
+    .container {
+      max-width: 900px;
+    }
+  </style>
+</head>
+
+<body class="has-text-white-bis">
+  <!-- Page-specific content will be injected here -->
+  {{ block "content" . }}{{ end }}
+
+  <!-- Footer -->
+  <footer class="footer has-background-dark has-text-grey-light mt-6">
+    <div class="content has-text-centered">
+      <p>
+        📚 <strong>Galactic Archive</strong> — Preserving knowledge since 3412 A.G.<br />
+        <small>Built with Go, Bulma, and htmx · © 2025</small>
+      </p>
+    </div>
+  </footer>
+  
